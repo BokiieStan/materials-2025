@@ -2,32 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Press It</title>
+  <title>Golden & Black Buttons</title>
   <style>
     body {
-      display: flex; 
-      justify-content: center; 
-      align-items: center; 
-      height: 100vh; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 20px;
       background: white;
       font-family: sans-serif;
     }
     button {
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding: 1rem 2rem;
       border: none;
-      border-radius: 12px;
-      background: #4CAF50;
-      color: white;
+      border-radius: 10px;
       cursor: pointer;
       transition: 0.3s;
+      color: white;
+      font-weight: bold;
     }
-    button:hover {
-      background: #45a049;
+    .gold {
+      background: gold;
+      color: black;
+    }
+    .gold:hover {
+      background: goldenrod;
+    }
+    .black {
+      background: black;
+    }
+    .black:hover {
+      background: #222;
     }
   </style>
 </head>
 <body>
-  <button onclick="window.location.href='site2.html'">Press it</button>
+  <button class="gold" onclick="window.location.href='site2.html'">PRESS ME</button>
+  <button class="black" onclick="window.location.href='https://github.com/bokiiestan'">My Github</button>
+
+  <!-- Future buttons can be added here -->
+  <!-- <button>Blank</button> -->
+  <!-- <button>Blank</button> -->
+  <!-- <button>Blank</button> -->
 </body>
 </html>
